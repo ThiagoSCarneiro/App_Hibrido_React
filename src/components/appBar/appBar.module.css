@@ -1,0 +1,14 @@
+.AppBar{
+    background-color: var(--primcolor);
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 15px;
+    & ul{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    & li{
+        list-style: none;
+    }
+}
