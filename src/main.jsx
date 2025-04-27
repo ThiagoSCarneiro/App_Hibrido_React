@@ -4,7 +4,7 @@ import TelaPrinc from './pages/TelaPrinc/TelaPrinc'
 import TelaSec from './pages/TelaSec/TelaSec'
 import Index from './pages/index'
 import "./app.css"
-import AppBar from './components/appBar/appBar'
+import AppBar from './components/AppBar/appBar'
 
 // IMPORT PAR TROCA TELA
 import ReactDOM from "react-dom/client";

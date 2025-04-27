@@ -1,4 +1,4 @@
-import AppBar from "../../components/appBar/appBar"
+import AppBar from "../../components/AppBar/appBar"
 
 export default function TelaPrinc(){
     const carros = ["Ferrari","Bugatti","Fiat",]
