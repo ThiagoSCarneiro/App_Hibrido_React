@@ -7,7 +7,6 @@ export default function TelaSec(){
             <div>
                 <Scanner onScan={(results) => {console.log(results)}}></Scanner>
             </div>
-            <AppBar></AppBar>
         </>
     )
 }

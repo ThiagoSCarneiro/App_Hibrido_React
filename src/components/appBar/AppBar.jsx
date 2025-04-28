@@ -1,5 +1,5 @@
 import styles from "./appBar.module.css";
-import { FaHouse, FaGear } from "react-icons/fa6";
+import { FaHouse, FaWpforms } from "react-icons/fa6";
 import { FaQrcode } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
@@ -18,7 +18,9 @@ export default function AppBar() {
           </Link>
         </li>
         <li>
-          <FaGear size={32} color="white" />
+          <Link to="/cad">
+          <FaWpforms size={32} color="white" />
+          </Link>
         </li>
       </ul>
     </nav>

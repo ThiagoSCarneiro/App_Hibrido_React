@@ -1,34 +1,35 @@
 import Movie from "../../components/Movie/movie";
 import { useState, useEffect } from "react";
+import AppBar from "../../components/appBar/appBar"
 import styles from "./index.module.css"
 
 export default function Index() {
-  const [movies, setMovies] = useState([]);
+    const [produtos, setProdutos] = useState([])
 
-  async function getMovieData() {
-    const response = await fetch("https://www.freetestapi.com/api/v1/movies");
-    const data = await response.json();
-    setMovies(data);
-  }
+    async function getProdutoData() {
+      const response = await fetch("http://localhost:3001/produtos")
+      const data = await response.json()
+      setProdutos(data)
+    }
 
-  useEffect(() => getMovieData, []);
+  
+
+  useEffect(() => getProdutoData, [])
 
   return (
     <>
+    <AppBar></AppBar>
       <div >
-        {movies.map((movie) => {
-          return (
-            <Movie
-              key={movie.id}
-              title={movie.title}
-              year={movie.year}
-              poster={movie.poster}
-              genres={movie.genre}
-              rating={movie.rating}
-            />
-          );
+        {produtos.map(produtos => {
+          return(
+            <div key={produtos.id}>
+              <h2>{produtos.nome}</h2>
+              <p>{produtos.descricao}</p>
+              <span>{produtos.preco}</span>
+            </div>
+          )
         })}
       </div>
     </>
-  );
+  )
 }

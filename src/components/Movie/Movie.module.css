@@ -3,5 +3,21 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 12px 0;
+    box-sizing: border-box;
+
+    h2{
+        word-break: break-all;
+    }
+    
+    & ul{
+        display: flex;
+        justify-content: space-between;
+        
+        & li{
+            list-style: none;
+            display: flex;
+            padding-left: 4px;
+        }
+    }
+    
 }

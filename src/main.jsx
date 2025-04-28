@@ -2,6 +2,7 @@ import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import TelaPrinc from './pages/TelaPrinc/TelaPrinc'
 import TelaSec from './pages/TelaSec/TelaSec'
+import Cadastro from './pages/CadastroTela/Cadastro'
 import Index from './pages/index'
 
 
@@ -16,6 +17,7 @@ createRoot(document.getElementById('root')).render(
       <Routes>
         <Route path='/' element={<Index/>} ></Route>
         <Route path='/qr-code' element={<TelaSec/>} ></Route>
+        <Route path='/cad' element={<Cadastro/>} ></Route>
       </Routes>
       <AppBar/>
     </BrowserRouter>
