@@ -1,8 +1,9 @@
-.Movie{
+.Movie {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+<<<<<<< HEAD
     box-sizing: border-box;
 
     h2{
@@ -21,3 +22,34 @@
     }
     
 }
+=======
+    margin: 12px 0;
+    padding: 20x; 
+    border-bottom: 3px solid gray; 
+    
+    
+    & h2 {
+        text-align: center;
+    }
+
+    & ul {
+        list-style: none;
+        padding: 0;
+        display: flex;
+        gap: 10px;
+
+        & li {
+            text-decoration: underline;
+        }
+    }
+
+    & p {
+        padding: 6px;
+        
+    }
+    & img{
+        margin: 5px;
+        border: 3px solid black;
+    }
+}
+>>>>>>> 53e561a965e8fd6f0469005c2bb1d4c471ce02c6
